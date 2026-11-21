@@ -1,0 +1,4 @@
+record_id,deployment_id,strategy_version,channel_id,started_at,ended_at,deploy_state
+deployments-01,DEP-3,RS-8,feed,2026-05-01T00:15:00Z,2026-05-04T10:00:00Z,completed
+deployments-02,DEP-4,RS-9,search,2026-05-02T01:00:00Z,2026-05-05T00:00:00Z,partial
+deployments-03,DEP-5,RS-8,feed,2026-05-04T10:00:00Z,2026-05-04T10:30:00Z,rollback

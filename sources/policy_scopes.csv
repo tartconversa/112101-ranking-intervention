@@ -1,0 +1,4 @@
+record_id,scope_id,content_id,policy_version,effective_from,effective_to,scope_state
+policy_scopes-01,S-10,POST-4,PV-2,2026-05-01T00:00:00Z,2026-05-05T00:00:00Z,active
+policy_scopes-02,S-11,POST-4,PV-3,2026-05-03T00:00:00Z,2026-05-04T12:00:00Z,narrowed
+policy_scopes-03,S-12,POST-8,PV-2,2026-05-02T00:00:00Z,2026-05-06T00:00:00Z,withdrawn

@@ -1,0 +1,4 @@
+record_id,exposure_id,content_id,deployment_id,occurred_at,impression_count,source_state
+exposures-01,EXP-31,POST-4,DEP-3,2026-05-02T12:00:00Z,530,confirmed
+exposures-02,EXP-32,POST-4,DEP-4,2026-05-03T14:00:00Z,122,late
+exposures-03,EXP-33,POST-8,DEP-5,2026-05-04T10:15:00Z,9,confirmed
