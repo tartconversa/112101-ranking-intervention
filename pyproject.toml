@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ranking-facts"
+version = "0.1.0"
+description = "推荐治理干预双时间数仓：区分政策允许范围、配置计划与真实分发行为"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ranking_facts = ["schema.sql"]

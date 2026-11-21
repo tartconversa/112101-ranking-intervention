@@ -1,0 +1,17 @@
+log_id,source_file,record_id,recorded_at,event_kind,details
+L-01,policy_scopes,policy_scopes-01,2026-05-01T00:00:00Z,registered,PV-2 对 POST-4 的干预范围 S-10 登记生效
+L-02,policy_strategy_bindings,policy_strategy_bindings-01,2026-05-01T00:05:00Z,registered,B-1 配置入库：PV-2 授权 RS-8 作用于 feed，晚于政策生效 5 分钟但早于投放
+L-03,deployments,deployments-01,2026-05-01T00:15:00Z,registered,DEP-3 实际开始投放 RS-8/feed
+L-04,policy_scopes,policy_scopes-03,2026-05-02T00:00:00Z,registered,PV-2 对 POST-8 的干预范围 S-12 登记，初始状态 active
+L-05,deployments,deployments-02,2026-05-02T01:00:00Z,registered,DEP-4 开始投放 RS-9/search，此时尚无对应策略绑定配置
+L-06,exposures,exposures-01,2026-05-02T12:05:00Z,confirmed,EXP-31 曝光汇总经对账确认
+L-07,policy_scopes,policy_scopes-02,2026-05-03T00:00:00Z,registered,PV-3 对 POST-4 的收窄范围 S-11 登记
+L-08,policy_strategy_bindings,policy_strategy_bindings-02,2026-05-03T00:10:00Z,registered,B-2 配置迟到入库：PV-3 授权 RS-9 作用于 search，DEP-4 已运行约 23 小时
+L-09,policy_strategy_bindings,policy_strategy_bindings-03,2026-05-04T09:55:00Z,registered,B-3 配置入库：回滚窗口内 PV-2 对 RS-8/feed 的授权
+L-10,deployments,deployments-03,2026-05-04T10:00:00Z,rollback_started,DEP-5 回滚操作启动
+L-11,deployments,deployments-01,2026-05-04T10:00:00Z,completed,DEP-3 正常结束
+L-12,exposures,exposures-03,2026-05-04T10:20:00Z,confirmed,EXP-33 回滚窗口内曝光经对账确认，历史事实保留
+L-13,deployments,deployments-03,2026-05-04T10:30:00Z,rollback_failed,DEP-5 回滚操作失败，恢复状态需人工核查
+L-14,policy_scopes,policy_scopes-03,2026-05-04T12:00:00Z,withdrawn,S-12 处置撤销登记：POST-8 范围撤回，晚于 EXP-33 发生时间
+L-15,deployments,deployments-02,2026-05-05T00:00:00Z,completed,DEP-4 按 partial 状态结束
+L-16,exposures,exposures-02,2026-05-05T09:00:00Z,received_late,EXP-32 迟到入库：事件发生于 05-03，尚未核实
