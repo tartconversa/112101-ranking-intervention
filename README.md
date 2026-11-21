@@ -8,6 +8,7 @@
 
 - `sources/` 保存原始业务记录。
 - `sources/policy_scopes.csv`
+- `sources/policy_strategy_bindings.csv`
 - `sources/deployments.csv`
 - `sources/exposures.csv`
 - `src/ranking_facts/` 是 Python 包入口。

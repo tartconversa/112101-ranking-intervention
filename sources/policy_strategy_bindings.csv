@@ -1,0 +1,4 @@
+record_id,binding_id,policy_version,strategy_version,channel_id,valid_from,valid_to
+policy_strategy_bindings-01,B-1,PV-2,RS-8,feed,2026-05-01T00:00:00Z,2026-05-04T10:00:00Z
+policy_strategy_bindings-02,B-2,PV-3,RS-9,search,2026-05-03T00:00:00Z,2026-05-05T00:00:00Z
+policy_strategy_bindings-03,B-3,PV-2,RS-8,feed,2026-05-04T10:00:00Z,2026-05-04T10:30:00Z
